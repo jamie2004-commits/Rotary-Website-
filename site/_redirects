@@ -1,0 +1,21 @@
+# Old WordPress addresses point at the new pages so existing links,
+# bookmarks and search results keep working. Cloudflare Pages and Netlify
+# both read this file. Format: old-path  new-path  status-code
+
+/rcjt/                    /about/      301
+/past-presidents/         /about/      301
+/about-us/                /about/      301
+/guiding-principles/      /about/      301
+/singapore/               /about/      301
+/useful-links/            /about/      301
+/affiliates-partners/     /partner/    301
+/areas-of-focus/          /projects/   301
+/join-us/                 /join/       301
+/contact/contact-rcjt/    /contact/    301
+/gallery-2-columns-pagination/  /      301
+
+# Anything left over from the old site lands on the home page
+# rather than a broken page.
+/wp-content/*             /            301
+/wp-admin/*               /            301
+/*                        /404.html    404
